@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/claud/OneDrive/Escritorio/UPIIZ/Noveno%20semestre/fine_tuning/mlruns/0/197c97bf67e14f7d9338bbdc50a9e178/artifacts
+end_time: 1729122573659
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 197c97bf67e14f7d9338bbdc50a9e178
+run_name: ./results
+run_uuid: 197c97bf67e14f7d9338bbdc50a9e178
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729122448899
+status: 3
+tags: []
+user_id: claud
