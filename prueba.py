@@ -32,7 +32,8 @@ def generar_respuesta(pregunta):
 
 
 # Probar con una pregunta sobre finanzas
-pregunta = "No, solo aquellos que cuentan con la autorización correspondiente por parte del SAT"
+pregunta = "En caso de que mi trámite no haya sido procedente, ¿puedo volver a presentarlo?"
 respuesta = generar_respuesta(pregunta)
-print(f"Pregunta: {pregunta}")
-print(f"Respuesta: {respuesta}")
+print(type(respuesta))
+print(f"\nPregunta: {pregunta} \n")
+print(f"\nRespuesta: {respuesta}")

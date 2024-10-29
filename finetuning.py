@@ -9,7 +9,7 @@ tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.2-1B")
 tokenizer.pad_token = tokenizer.eos_token
 
 # Cargar el dataset en formato JSONL
-dataset = load_dataset('json', data_files='dataset_faq_adeudos.jsonl')
+dataset = load_dataset('json', data_files='archivo_convertido.jsonl')
 
 # Tokenizar el dataset, incluyendo etiquetas
 def tokenize_function(examples):
@@ -36,7 +36,8 @@ training_args = TrainingArguments(
     logging_dir='./logs',
     logging_steps=10,
     save_steps=500,
-    save_total_limit=2
+    save_total_limit=2,
+    gradient_accumulation_steps=2,
 )
 
 # Definir el Trainer
